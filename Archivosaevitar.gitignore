@@ -1,0 +1,36 @@
+# Datos crudos de secuenciación 
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+
+# Alineamientos 
+*.bam
+*.sam
+*.bai
+
+# Índices de alineadores
+index/
+salmon_index/
+star_index/
+
+# Archivos temporales o cachés
+*.log
+*.tmp
+*.aux
+*.out
+
+# R específicos
+.Rhistory
+.RData
+.Rproj.user/
+
+# RStudio project files 
+*.Rproj
+
+# MultiQC pesados 
+multiqc_report.html
+
+# Comprimidos grandes
+*.zip
+*.tar.gz
