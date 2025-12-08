@@ -6,7 +6,7 @@ Análisis de expresión diferencial obesidad vs normopeso (RNA-seq)
 - `scripts/`: scripts en R para cada etapa del pipeline.
 - `data/`: datos de entrada ligeros (matrices de conteo). **No subir FASTQ ni BAM.**
 - `results/`: resultados del análisis (tablas, figuras).
-- `docs/`: documentación y materiales para el póster.
+- `docs/`: documentación y materiales para el póster. **Revisión bibliográfica**
 - `poster/`: contenido del póster.
 
 ## Pipeline
