@@ -235,26 +235,6 @@ Información funcional de genes
 Conclusiones
 Póster final
 
-🧠 Resumen visual rápido
-FASTQ
-  ↓
-QC (1) ───┐
-          ↓
-Alineamiento / pseudo (2)
-          ↓
-Cuantificación + matriz (3)
-          ↓
-      ┌───────────┐
-      ↓           ↓
-   DESeq2 (4)   EdgeR (5)
-      ↓           ↓
-      └─────┬─────┘
-            ↓
-     Visualización (6)
-            ↓
-   Interpretación / Póster (7)
-
-🔑 Idea clave que tienes que tener clara
 
 **👉 El paso 3 es el cuello de botella**
 Si ese paso está bien hecho:
