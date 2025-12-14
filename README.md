@@ -11,6 +11,16 @@ Análisis de expresión diferencial obesidad vs normopeso (RNA-seq)
 
 ## Pipeline 
 
+
+1. Control de calidad (FastQC, MultiQC).
+2. Pseudoalineamiento / cuantificación (Salmon).
+3. Cuantificación por gen y matriz de conteos (tximport en R).
+4. Análisis de expresión diferencial (DESeq2 y EdgeR).
+5. Visualización (volcano, heatmap, PCA).
+6. Interpretación biológica y póster.
+
+### Explicación detallada:
+
 1️⃣ Control de calidad (QC)
 📂 Archivos de entrada
 Carpeta Fastqs/
