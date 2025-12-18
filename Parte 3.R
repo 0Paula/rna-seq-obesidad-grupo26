@@ -22,21 +22,18 @@ tx2gene <- as.data.frame(tx2gene) #tximport funciona mejor con dataframe que con
 colnames(tx2gene) <- c("Transcrito", "Gen_ID") #Renombro las columnas que se llamaban X1 y X2
 colnames(tx2gene)
 
-
-samples <- c(
-  "sample1",
-  "sample2",
-  "sample3",
-  "sample4",
-  "sample5",
-  "sample6",
-  "sample7",
-  "sample8"
-)
-
 #Ahora le decimos dónde está cada quant.sf:
-  
-files <- file.path("data", samples, "quant.sf")
+
+list.files("C:/Users/fernandezperez/Downloads/SECUENCIACION-ACTIVIDAD 2/Output_Parte_2_Lucia/outputs")
+
+samples <- c("abraham", "bart", "homer", "lisa", "maggie")
+
+ruta_base <- "C:/Users/fernandezperez/Downloads/SECUENCIACION-ACTIVIDAD 2/Output_Parte_2_Lucia/outputs"
+
+files <- file.path(
+  ruta_base,
+  paste0(samples, "_quant.sf")
+)
 
 
 names(files) <- samples
@@ -88,3 +85,10 @@ write.table(
   col.names = NA,
   fileEncoding = "UTF-8"
 )
+
+#Para visualizar los archivos .tsv en R
+tabla <- read.delim("matriz_genes_muestras.tsv", sep = "\t", header = TRUE)
+View(tabla)
+
+tabla <- read.delim("matriz_genes_muestras_NORMALIZADA.tsv", sep = "\t", header = TRUE)
+View(tabla)
